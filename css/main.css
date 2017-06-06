@@ -26,3 +26,6 @@ header .fa-chevron-left {
   text-align: center;
   background-color: #F44336;
 }
+.search .result .station {
+  border: 1px solid gray;
+}

@@ -5,6 +5,7 @@ const render = (root) => {
   const wrapper = $('<div class="wrapper"></div>');
   wrapper.append(Header(_ => render(root)));
   wrapper.append(Search(_ => render(root)));
+  wrapper.append(Result(_ => render(root)));
   root.append(wrapper);
 }
 
@@ -23,5 +24,6 @@ $( _ => {
 
     const root = $('.root');
     render(root);
+    Load_List_Stations();
   });
 });
