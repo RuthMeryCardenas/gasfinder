@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
+body {
+  background-color: #FFFFFF;
+}
 header {
   color: #fff;
   font-size: 18px;
@@ -13,7 +15,14 @@ header {
   padding-left: 16px;
   background-color: #F44336;
 }
-
 header .fa-chevron-left {
   margin-right: 16px;
+}
+/*SECCIÓN DE BÚSQUEDA DE DISTRITO*/
+.search {
+
+}
+.search .get-district {
+  text-align: center;
+  background-color: #F44336;
 }
