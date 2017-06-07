@@ -12,12 +12,16 @@ const Station = (id, name, address, district, update) => {
   const address_station = $("<span class='address-station'>" + address + "</span>");
   const line_jump = $("<br>");
   const district_station = $("<span class='district-station'>" + district + "</span>");
+  const link = $("<a href=station_detail.html></a>");
+  const icon = $("<span class='fa fa-map-o' aria-hidden='true'></span>");
 
   information.append(address_station);
   information.append(line_jump);
   information.append(district_station);
   station.append(name_station);
   station.append(information);
+  link.append(icon);
+  station.append(link);
 
   return station;
 }

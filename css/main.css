@@ -38,11 +38,11 @@ header , section {
 .search span.fa-search{
   color: #545454;
   font-size: 1.5rem;
+  min-width: 30px;
   width: 2.5%;
 }
 .search input {
   border: 0;
-  display: block;
   font-size: 1rem;
   outline: 0;
   width: 97.5%;
@@ -51,7 +51,14 @@ header , section {
 .result .station {
   border-bottom: 1px solid #959595;
   padding: 1rem;
+  position: relative;
 }
-.result .station .information{
+.result .station .information,
+.result .station a span {
   color: #545454;
+}
+.result .station a{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
