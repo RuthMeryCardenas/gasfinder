@@ -1,31 +1,47 @@
 * {
-  margin:0px;
-  padding:0px;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  margin:0px;
+  padding:0px;
 }
 body {
   background-color: #FFFFFF;
+  font-size: 14px;
 }
 header {
+  background-color: #F44336;
   color: #fff;
   font-size: 18px;
   height: 56px;
   line-height: 56px;
-  padding-left: 16px;
-  background-color: #F44336;
 }
 header .fa-chevron-left {
   margin-right: 16px;
 }
+header , section {
+  padding-left: 2rem;
+}
 /*SECCIÓN DE BÚSQUEDA DE DISTRITO*/
 .search {
-
+  background-color: #F44336;
+  padding: 1rem 2rem;
 }
 .search .get-district {
-  text-align: center;
-  background-color: #F44336;
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 1rem;
 }
-.search .result .station {
+.search span.fa-search{
+  font-size: 1.5rem;
+  width: 2.5%;
+}
+.search input {
+  border: 0;
+  display: block;
+  font-size: 1rem;
+  outline: 0;
+  width: 97.5%;
+}
+.result .station {
   border: 1px solid gray;
 }

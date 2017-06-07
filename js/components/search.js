@@ -3,7 +3,7 @@
 const Search = (update) => {
   const search = $("<section class='search'></section>");
   const get_district = $("<div class='get-district'></div>");
-  const icon = $("<i>icono</i>");
+  const icon = $("<span class='fa fa-search' aria-hidden='true'></span>");
   const input = $("<input type='text' placeholder='Ingresa tu distrito a buscar'>");
 
   get_district.append(icon);
