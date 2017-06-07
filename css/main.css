@@ -21,17 +21,22 @@ header .fa-chevron-left {
 header , section {
   padding-left: 2rem;
 }
+.search, .result {
+  padding: 1rem 2rem;
+}
 /*SECCIÓN DE BÚSQUEDA DE DISTRITO*/
 .search {
   background-color: #F44336;
-  padding: 1rem 2rem;
+}
+.search .get-district{
+  padding: 1rem;
 }
 .search .get-district {
   background-color: #FFFFFF;
   display: flex;
-  padding: 1rem;
 }
 .search span.fa-search{
+  color: #545454;
   font-size: 1.5rem;
   width: 2.5%;
 }
@@ -42,6 +47,11 @@ header , section {
   outline: 0;
   width: 97.5%;
 }
+/*SECCIÓN DE RESULTADOS DE BÚSQUEDA*/
 .result .station {
-  border: 1px solid gray;
+  border-bottom: 1px solid #959595;
+  padding: 1rem;
+}
+.result .station .information{
+  color: #545454;
 }
