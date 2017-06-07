@@ -13,12 +13,9 @@ const Search = (update) => {
   input.on("keypress", (e) => {
     if (e.which === 13) {
       if (input.val() != "") {
-        //si se ingresa un distrito
-        //llamar filtro pasando el valor
-        //renderizar lista de estaciones
+        filterByDistrict ($(".list-stations"), input.val());
       }else {
-        //si no ingresa nada
-        //llamar filtro mostrando ALL
+        reRender ($(".list-stations"));
       }
     }
   });

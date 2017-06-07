@@ -24,6 +24,6 @@ $( _ => {
 
     const root = $('.root');
     render(root);
-    Load_List_Stations();
+    // Load_List_Stations($(".list-stations"));
   });
 });

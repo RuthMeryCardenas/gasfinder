@@ -1,6 +1,7 @@
 const Result = (update) => {
   const result = $("<section class='result'></section>");
-
+  const list_stations = $("<div class='list-stations'></div>");
+  result.append(list_stations);
   return result;
 }
 
@@ -21,11 +22,12 @@ const Station = (id, name, address, district, update) => {
   return station;
 }
 
-const Load_List_Stations = () => {
-  const parent = $(".result");
-  const list_stations = $("<div class='list-stations'></div>");
+const Load_List_Stations = (list_stations) => {
   state.stations.forEach((station, index) => {
     list_stations.append(Station (index, station.name, station.address, station.district));
   });
-  parent.append(list_stations);
+}
+const reRender = (list_stations) => {
+  list_stations.empty();
+  Load_List_Stations($(".list-stations"));
 }
